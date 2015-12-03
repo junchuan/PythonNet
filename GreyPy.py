@@ -77,8 +77,9 @@ def portScan(tgtHost,tgtPorts):
 
     setdefaulttimeout(1)
     for tgtPort in tgtPorts:
-        print "scanning ports", tgtPort
-        connScan(tgtHost,int(tgtPort))
+        nmapScan(tgtHost,tgtPort)
+        #print "scanning ports", tgtPort
+        #connScan(tgtHost,int(tgtPort))
 
 if __name__=="__main__":
     main()
